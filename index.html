@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MyWeather</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/aa8ad90c76.js" crossorigin="anonymous"></script>
+
+</html>
+
+<body>
+  <header class='headerBar'>
+    <h1>Weather App</h1>
+    <div>
+      <input type='text' class='cityInput' name='city' placeholder='City' />
+      <button class='cityBtn'>Search</button>
+    </div>
+  </header>
+
+  <section class='mainContainer'>
+    <section class='weatherContainer'>
+      <div id='currentWeather'>
+        <div id='weatherInfoMain'>
+          <h1 id='city'></h1>
+          <div class='dataLine'>
+            <i id='condition' class="fa-solid "></i>
+            <p id='temp'></p>
+          </div>
+        </div>
+
+        <div class='dataBlock'>
+          <div class='tempBtnContainer'>
+            <button class='unitBtnF'>&#8457</button>
+            <button class='unitBtnC'>&#8451</button>
+          </div>
+          <p class='Info' id='weatherDesc'>weatherDesc</p>
+          <p class='Info' id='tempFeel'>tempFeel</p>
+          <div class='windContainer'>
+            <p class='Info' id='wind'></p>
+            <p id='spdUnit'>MPH</p>
+          </div>
+        </div>
+      </div>
+      <div id='thinLine'>
+        <p id='direction'></p>
+      </div>
+    </section>
+    <section class='forecastContainer'>
+      <p id='forcastLabel'> Daily Forecast
+      <div class=cardContainer>
+      </div>
+      </div>
+
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+:root {
+  --Font-Light: #FFFFFF;
+  --Font-Accent: #FFA64D;
+  --BG-wht-25: rgba(250,250,250,.25);
+  --BG-wht-05: rgba(250,250,250,.05);
+  --BG-btn-00: rgba(0,0,0,0)
+}
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  width:100%;
+  height:100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #4181C0 0%, #3E7CB9 50%, #366CA2 100%);
+  border:none;
+  font-size: 62.5%;
+  color: var(--Font-Light);
+  /*   background-color: black; */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: .5rem 0 0 0;
+}
+
+i {
+  font-size: 3rem;
+  color: var(--Font-Light);
+}
+
+/* -------HEADER------- */
+.headerBar{
+  position: fixed;
+  top:0%;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--BG-wht-05);
+}
+
+.cityInput {
+  height: 2rem;
+  width: 10rem;
+}
+
+.cityBtn {
+  margin: .75rem 1rem 0 .5rem;
+  height: 2rem;
+  width: 5rem;  
+}
+  
+.cityBtn, .cityInput {
+  font-size:1rem;
+  border: none;
+  border-radius:.25rem;
+  background-color: var(--BG-wht-25);
+  color: var(--Font-Light);
+  cursor: pointer;
+}
+
+.cityBtn:hover {
+  color: var(--Font-Accent);
+}
+
+/* ------BTNs for UNIT CHANGE--------  */
+
+.tempBtnContainer {
+  margin: 1rem 0 .25rem 3.5rem;
+  width: 4rem;
+  height: 1.5rem;
+  display: flex;
+  background-color: var(--BG-wht-05);
+  border: solid .25rem var(--BG-wht-05);
+  border-radius: .5rem;
+    
+}
+
+.unitBtnF, .unitBtnC {
+  height:1.5rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--BG-wht-00);
+  color: var(--Font-Light);
+  border:none;
+  border-radius: .5rem;
+  font-weight: 800;
+  cursor: pointer;
+  
+}
+
+.btnSelect{
+  background-color: var(--BG-wht-25);
+  color: var(--Font-Accent);
+}
+
+/* -------Main Container------- */
+
+.mainContainer {
+  margin-top: 8rem;
+  padding: .5rem;
+  width: 21rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--BG-wht-05);
+  box-shadow: inset -2px 1px 21px 0px rgba(218,227,231,0.35);
+  border-radius: .25rem;
+}
+
+.forecastContainer, .weatherContainer {
+  padding: .5rem;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* ------- CURRENT WEATHER DATA ---------- */
+
+#currentWeather{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#weatherInfoMain{
+  padding: .5rem;
+  width: 9.5rem;
+}
+
+#city{
+  margin: .25rem 0 .75rem 0;
+  color: var(--Font-Light);
+  font-size: 1rem; 
+}
+
+.dataLine {
+  margin-top: .25rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1rem;
+}
+
+/* --------- SECONDARY WEATHER DATA -------------- */
+
+.datablock {
+  padding: .5rem; 
+  margin-right: .5rem;
+  width: 8rem;
+  display: flex;
+  font-size: .75rem;
+}
+
+#temp, #wind, #direction, #spdUnit{
+  margin: .1rem;
+  color: var(--Font-Accent);
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+#temp{
+  font-size: 3rem;
+}
+
+.Info{
+  text-align: right;
+  font-size: .8rem;
+  margin: .2rem .75rem ; 
+}
+
+.windContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 8rem;
+  height: 1rem;
+  padding-right: .75rem;
+}
+
+/* ------- FORECAST CARDS ----------- */
+
+#forcastLabel {
+  font-size: 1rem;
+  margin: -.5rem 0 .25rem 1.5rem;
+}
+
+.cardContainer {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.weatherCard {  
+  margin: 0 .25rem 0 .25rem;
+  width:3rem;
+  height:6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .75rem; 
+}
+
+#thinLine{
+  height:1rem;
+  width: 18rem;
+  background-color: var(--BG-wht-25);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.25rem
+}
